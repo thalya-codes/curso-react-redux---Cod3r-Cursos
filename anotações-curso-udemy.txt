@@ -1,0 +1,50 @@
+EXPORT default
+
+Quando eu exporto uma variável ou função como default, ao realizar o seu import eu 
+posso nomea-lo como eu quiser.
+
+Já quando eu export sem o default, no seu import deve ter o mesmo nome que declarodo no 
+arquivo original.
+
+Sem a palavra reservada default eu não posso retornar uma FUNÇÃO ANÔNIMA
+
+
+Passando um valor númérico como prop
+
+<Component nome='Thalya' idade={24}/>
+
+
+*** PROPRIEDADES SÃO APENAS PARA LEITURA, ou seja, não posso alterar/reatribuir um
+valor a elas.
+
+	Algumas alternativas viaveis quando eu quero evoluir as infos de uma prop são:
+
+	Criar uma variavel, passar a props e fazer o que eu quiser
+	ex: prop.nota => 5
+	    const somaPontos extras= props.nota +2
+
+	NAÕ POSSO
+        props.nota +=2
+
+
+	OUTRA solução é utilizar um state.
+
+
+
+---------------->
+
+DESTRUCTING OBJ -> retirar um valor de objeto
+
+ex: const frutas = {
+	nome: 'maçã',
+	ehDoce: true
+}
+
+const {nome , ehDoce} =  frutas
+
+
+
+
+---------------> 
+
+{ props.children } -> componentes que estão no corpo o componente pai
